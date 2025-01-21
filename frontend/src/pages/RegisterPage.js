@@ -46,17 +46,11 @@ function RegisterPage() {
         <h1 style={{ marginBottom: "20px", color: "#FFCA28" }}>Register</h1>
         <form onSubmit={handleSubmit}>
           <div style={{ marginBottom: "15px" }}>
-            <label
-              style={{
-                display: "block",
-                marginBottom: "5px",
-                fontWeight: "bold",
-                color: "#FFFFFF",
-              }}
-            >
+            <label htmlFor="name" style={{ display: "block", marginBottom: "5px", fontWeight: "bold", color: "#FFFFFF" }}>
               Name:
             </label>
             <input
+              id="name"
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -73,17 +67,11 @@ function RegisterPage() {
             />
           </div>
           <div style={{ marginBottom: "15px" }}>
-            <label
-              style={{
-                display: "block",
-                marginBottom: "5px",
-                fontWeight: "bold",
-                color: "#FFFFFF",
-              }}
-            >
+            <label htmlFor="surname" style={{ display: "block", marginBottom: "5px", fontWeight: "bold", color: "#FFFFFF" }}>
               Surname:
             </label>
             <input
+              id="surname"
               type="text"
               value={surname}
               onChange={(e) => setSurname(e.target.value)}
@@ -100,17 +88,11 @@ function RegisterPage() {
             />
           </div>
           <div style={{ marginBottom: "15px" }}>
-            <label
-              style={{
-                display: "block",
-                marginBottom: "5px",
-                fontWeight: "bold",
-                color: "#FFFFFF",
-              }}
-            >
+            <label htmlFor="email" style={{ display: "block", marginBottom: "5px", fontWeight: "bold", color: "#FFFFFF" }}>
               Email:
             </label>
             <input
+              id="email"
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -127,17 +109,11 @@ function RegisterPage() {
             />
           </div>
           <div style={{ marginBottom: "15px" }}>
-            <label
-              style={{
-                display: "block",
-                marginBottom: "5px",
-                fontWeight: "bold",
-                color: "#FFFFFF",
-              }}
-            >
+            <label htmlFor="password" style={{ display: "block", marginBottom: "5px", fontWeight: "bold", color: "#FFFFFF" }}>
               Password:
             </label>
             <input
+              id="password"
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
