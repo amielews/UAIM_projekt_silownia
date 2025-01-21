@@ -110,10 +110,11 @@ function TrainerDetailsPage() {
           }}
         >
           <div style={{ marginBottom: "10px" }}>
-            <label style={{ display: "block", marginBottom: "5px", fontWeight: "bold" }}>
+            <label htmlFor="commentInput" style={{ display: "block", marginBottom: "5px", fontWeight: "bold" }}>
               Comment:
             </label>
             <input
+              id="commentInput"
               type="text"
               value={comment}
               onChange={(e) => setComment(e.target.value)}
@@ -128,10 +129,11 @@ function TrainerDetailsPage() {
             />
           </div>
           <div style={{ marginBottom: "10px" }}>
-            <label style={{ display: "block", marginBottom: "5px", fontWeight: "bold" }}>
+            <label htmlFor="ratingInput" style={{ display: "block", marginBottom: "5px", fontWeight: "bold" }}>
               Rating (1-5):
             </label>
             <input
+              id="ratingInput"
               type="number"
               min="1"
               max="5"

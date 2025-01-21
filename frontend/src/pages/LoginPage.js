@@ -53,6 +53,7 @@ function LoginPage() {
         <form onSubmit={handleSubmit}>
           <div style={{ marginBottom: "15px" }}>
             <label
+              htmlFor="email"
               style={{
                 display: "block",
                 marginBottom: "5px",
@@ -63,6 +64,7 @@ function LoginPage() {
               Email:
             </label>
             <input
+              id="email" 
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -80,6 +82,7 @@ function LoginPage() {
           </div>
           <div style={{ marginBottom: "15px" }}>
             <label
+              htmlFor="password" 
               style={{
                 display: "block",
                 marginBottom: "5px",
@@ -90,6 +93,7 @@ function LoginPage() {
               Password:
             </label>
             <input
+              id="password" 
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -107,6 +111,7 @@ function LoginPage() {
           </div>
           <button
             type="submit"
+            data-testid="login-button"
             style={{
               width: "100%",
               padding: "10px",
